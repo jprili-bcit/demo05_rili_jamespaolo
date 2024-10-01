@@ -30,22 +30,26 @@
     <body>
         <!------------------------------>
         <!-- Your HTML Layout go here -->
-        <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <!------------------------------>
+        <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">EatMOJI</a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a
                                 class="nav-link active"
@@ -57,38 +61,76 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Download</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true"
-                                >Secret Stuff</a
+                                >Disabled</a
                             >
                         </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
-        <!------------------------------>
         <!-- Stuff for body goes here -->
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Welcome to EatMOJI!</h1>
-                <p class="col-md-8 fs-4">I'm hungry, let's eat somewhere!</p>
 
-                <button
-                    onclick="window.location.href='login.html'"
-                    class="btn btn-secondary btn-lg"
-                    type="button"
-                >
-                    Login/Signup
-                </button>
-
-                <!-- Add an onclick attribute to define click event handler -->
-                <!-- <button onclick="window.location.href='login.html'" class="btn btn-primary btn-lg" type="button">Login/Signup</button> -->
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Welcome to EatMOJI!</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">I'm hungry, let's eat!</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button
+                        onclick="window.location.href='login.html'"
+                        type="button"
+                        class="btn btn-warning btn-lg px-4 gap-3"
+                    >
+                        Log in/Sign up
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 container">
+        <!-- Add an onclick attribute to define click event handler -->
+        <!-- <button onclick="window.location.href='login.html'" class="btn btn-primary btn-lg" type="button">Login/Signup</button> -->
+
+        <div
+            class="row row-cols-1 row-cols-md-3 g-4 container justify-content-around"
+        >
             <div class="col">
                 <div class="card" style="width: 18rem">
                     <img
@@ -99,8 +141,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and
-                            make up the bulk of the card's content.
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
                         </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -116,8 +158,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and
-                            make up the bulk of the card's content.
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
                         </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -125,12 +167,16 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem">
-                    <img src="https://picsum.photos/id/22/500/500" class="card-img-top" alt="..." />
+                    <img
+                        src="https://picsum.photos/id/22/500/500"
+                        class="card-img-top"
+                        alt="..."
+                    />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and
-                            make up the bulk of the card's content.
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
                         </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
